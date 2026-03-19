@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+////BY AMZ GROUP
+int main() {
+    int num;
+    char choice;
+
+    do {
+        cout << "Enter a number: ";
+        cin >> num;
+
+        if(num % 2 == 0) {
+            cout << num << " is Even.\n";
+        } else {
+            cout << num << " is Odd.\n";
+        }
+
+        cout << "Do you want to try again? (y/n): ";
+        cin >> choice;
+
+    } while(choice == 'y' || choice == 'Y');
+
+    cout << "Goodbye! 👋\n";
+
+    return 0;
+}
